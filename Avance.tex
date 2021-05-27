@@ -1,0 +1,279 @@
+%% This is file `FormatoParaTrabajos.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+
+%%Entregue un documento pdf con el formato establecido para el proyecto que contenga las secciones 1 a 4 y 8 que se encuentran especificadas en el apartado de "Rubros de trabajo escrito y presentación" del documento de especificación del proyecto final. El marco teórico debe relacionarse con el inciso 3 de la sección de "Rubros de entregable ejecutable" correspondiente a su equipo. Redacte la sección 4 a modo de borrador con el diagrama, técnicas y experimentos que planea realizar. Por último, coloque en el documento una planeación con fechas de tareas específicas para terminar el proyecto.
+%%Escriba dentro del cuadro de texto la liga al repositorio que ha creado para alojar el código de su proyecto, donde deberá encontrarse un archivo readme con el nombre del proyecto, nombre del equipo y el planteamiento del problema que se redactó en el documento pdf.
+
+\documentclass[preprint,12pt]{elsarticle}
+
+
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+\usepackage{amsmath}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+
+%% The multirow package provides the merging of rows in a table
+\usepackage{multirow}
+%% The hyperref package provides the linking of web pages to the text
+\usepackage{hyperref}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+\usepackage[utf8]{inputenc}
+
+%% Paquetes para formato en español. Si no se desea escribir el documento en español, se deben comentar las dos siguientes líneas.
+\usepackage[spanish,es-tabla]{babel}
+\selectlanguage{spanish}
+\usepackage[spanish,onelanguage,ruled,vlined,linesnumbered]{algorithm2e} 
+
+%% Paquetes para formato en inglés. Si no se desea escribir el documento en inglés, se deben comentar las siguientes líneas
+%\usepackage[english]{babel}
+%\selectlanguage{english}
+%\usepackage[ruled,vlined,linesnumbered]{algorithm2e} 
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\journal{Sistemas Operativos II}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+\title{Proyecto Final}
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{Iván Melchor Santiago}
+\author{José Antonio Cortés Olmos}
+\author{Edgar Hernández Millán}
+\author{Karen Iveth Plata Hernández}
+\author{Luis Enrique Contreras Vázquez}
+
+\address{Universidad La Salle, Ciudad de México}
+
+\begin{abstract}
+%% Text of abstract
+Video game developed in a 3D environment, for people over 6 years old, where tools such as unity, blender and maya will be used. The video game consists of 5 levels where the main objective is that the user, in this case the player will try to prevent the garbage from falling to the ground, where the player will have a certain amount of attempts or rather lives to reach the end of it. The project includes 3D designs, 3D animations, etc. This to raise awareness of how important it is to collect and separate garbage. In addition to this, an interaction system with a joystick will be implemented for the functionality of the game through a driver (which is a low-level input interaction), which will generate a file that will later be read by a compiler, finally send the interactions to our game.
+\end{abstract}
+
+\begin{keyword}
+Proyecto final \sep Uso de latex \sep Sistemas Operativos II
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+%\linenumbers
+
+%% main text
+\section{Introducción} %/1
+\label{sec:intro}
+Videojuego desarrollado en un ambiente 3D, para un público mayor a los 6 años, donde se usarán distintos softwares como herramientas para su desarrollo para las distintas etapas del proyecto como lo son Unity, Blender y Maya. El videojuego consta de 3 niveles donde su objetivo principal es que el jugador tratará de evitar que la basura caiga al suelo por medio de un bote de basura clasificándola por el tipo de basura, además de que el jugador tendrá cierta cantidad de  vidas para llegar al fin de este. El proyecto incluye diseños en 3D, animaciones en 3D, etc . Esto para generar conciencia de lo importante que es recoger la basura y separarla. Aunado a esto se implementará un sistema de interacción con un joystick para la funcionalidad del juego por medio de un driver (lo cual es una interacción de entrada a bajo nivel),el cual generará un archivo que posteriormente será leído por un compilador, para finalmente mandar las interacciones a nuestro juego.
+
+\section{Marco Teórico} %/2
+ Los dispositivos de entradas son aquellos dispositivos hardware por donde se hace algún tipo de envío de información o datos con la que va a trabajar la computadora. Algunos ejemplos de este tipo de dispositivos pueden ser:
+    \begin{itemize}
+        \item Teclado
+        \item Mouse
+        \item Webcam
+        \item Micrófono
+    \end{itemize} \newline
+También existen los dispositivos de salida que al contrario de los dispositicos de entrada, los de salida reciben la información o datos desde la computadora y mostrar por medio de las capacidades del dispositivo la o las operaciones realizadas.
+Algunos ejemplos de este tipo de dispositivos pueden ser:
+    \begin{itemize}
+        \item Audífonos o bocinas
+        \item Monitor
+        \item Impresoras
+    \end{itemize} \newline
+
+Para la comunicación existen distintas metodologías:
+   \begin{itemize}
+        \item \textbf{Entrada/Salida programada:} El procesador hace una consulta del estado   de cada uno de los dispositivos entrando en un ciclo hasta que se registra un cambio de estado.\cite{Murdocca:2002}\newline
+\begin{figure}[ht!]
+\centering\includegraphics[width=.5\linewidth]{FormatoTrabajos/ESProgramada.png}
+\caption{Diagrama de flujo Programado}
+\label{fig:ESProgramada}
+\end{figure}
+\newline\newline\newline\newline\newline\newline\newline\newline\newline
+        \item \textbf{Entrada/Salida administrada por interrupciones:} Cuando es utilizada esta metodología el procesador solamente accede al dispositivo cuando el mismo dispositivo lo necesita. \cite{Murdocca:2002}
+\begin{figure}[ht!]
+\centering\includegraphics[width=.5\linewidth]{FormatoTrabajos/ESInterrupciones.png}
+\caption{Diagrama de flujo Interrupciones}
+\label{fig:ESInterrupciones}
+\end{figure}\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline
+        \item \textbf{Acceso directo a memoria:} Se hace la trasnferencia de datos de una manera más directa y sin tener como intermediario al procesador. \cite{Murdocca:2002}
+        \begin{figure}[ht!]
+\centering\includegraphics[width=.5\linewidth]{FormatoTrabajos/ESAccesoDirecto.png}
+\caption{Diagrama de flujo Acceso Directo}
+\label{fig:ESAccesoDirecto}
+\end{figure}\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline
+    \end{itemize} \newline
+ \cite{Silberschatz:2006}.
+Esto es un ejemplo para obtener una referencia del .bib \cite{Smith:2013jd}
+
+\subsection{Descripción de los Apartados del Documento}
+Introducción\newline
+
+\newline Videojuego desarrollado en un ambiente 3D, con el objetivo de generar conciencia de lo importante que es recoger la basura y separarla, implementando un sistema de interacción con un joystick para la funcionalidad del juego por medio de un driver, se generará un archivo a partir de esto que posteriormente será leido por un compilador para finalmente mandar las interacciones al juego.
+
+Marco Teórico\newline
+
+\newline Se describen los dispositivos de entrada/salida,y la forma en que se realiza el envio o recepción de información. El procesador puede interactuar con estos dispositivos de diferentes formas, ya sea programada, haciendo consultas sobre el estado hasta que se registra un cambio en el mismo, por interrupciones, utilizada cuando el procesador únicamente accede al dispositivo cuando este lo necesita, y a memoria, haciendo transferencia de datos de una forma directa.\newline
+
+Planteamiento del Problema\newline
+
+Se busca realizar una comunicación entre el videojuego desarrollado en Unity y un dispositivo de entrada, en este caso un Joystick. Se describe de que forma esta tarea interactua con el videojuego en general y de que forma se van a recibir los datos o información necesaria para ser interpretadas por el compilador y posteriormente mande instrucciones al juego. \newline
+
+Metodología\newline
+
+\newline Se describe la metodología 
+
+\section{Planteamiento del problema}
+\label{sec:planprob}
+Se realizará la comunicación de nuestro dispositivo de entrada (un joystick) con el videojuego que se desarrollará en la interfaz de Unity. El desafio en este proyecto es hacer que el controlador se comunique y reciba datos de este dispositivo, que se interpretarán en un archivo para un compilador diseñado por el equipo, y posteriormente este manden instrucciones al juego.\newline
+
+Es de importancia que el controlador pueda establecer comunicación con nuestro dispositivo de entrada, de lo contrarío, no se recibirán los datos o información necesaria con los cuales el usuario pueda interactuar con el videojuego. Se implementará una de las 3 formas en las que el procesador puede interactuar con este tipo de dispositivos y se verificará que la conexión sea exitosa.
+
+\section{Metodología}
+\label{sec:metod}
+
+Describir como se realizó el proyecto con subsecciones de diagrama de flujo, diagrama de actividades UML y pseudocódigo
+
+\subsection{Diagrama de flujo}
+Se debe describir con palabras en un texto estructurado de qué trata el diagrama de flujo y la figura donde se representa el diagrama se debe referenciar como Fig. \ref{fig:Judy}. \textbf{Las figuras deben contener un caption o descripción en el pie de figura}.
+
+\begin{figure}[ht!]
+\centering\includegraphics[width=0.2\linewidth]{./Judy_Hopps.png}
+\caption{A Judy le gustan los conejos.}
+\label{fig:Judy}
+\end{figure}
+
+\subsection{Diagrama de actividades UML}
+El diagrama de actividades también debe ser descrito en un texto estructurado y referenciar la figura donde se encuentra como Fig. \ref{fig:Nick}.
+
+\begin{figure}[ht!]
+\centering\includegraphics[width=0.2\linewidth]{./Nick_Wilde.png}
+\caption{A Nick le gustan los zorros.}
+\label{fig:Nick}
+\end{figure}
+
+\subsection{Pseudocódigo}
+El pseudocódigo debe representarse por medio del siguiente formato dado en el algoritmo \ref{alg:XYZ2HSV}.
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+\bibliographystyle{model1-num-names}
+\bibliography{sample.bib}
+
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `FormatoParaTrabajos.tex'.

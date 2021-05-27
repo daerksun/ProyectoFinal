@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 4cd7dd23ca41f7848a762b2d60736efc
+  - enabled: 1
+    path: Assets/Scenes/Nivel1.unity
+    guid: 561f40b43d2142245afdf3a130bcffc8
+  - enabled: 1
+    path: Assets/Scenes/Reglas.unity
+    guid: f296571e588b0a941b90d593c7714036
+  - enabled: 1
+    path: Assets/Scenes/Niveles.unity
+    guid: f054535dc4f00f743bbfe792f3fc1224
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Nivel3.unity
+    guid: d05d13a0d861e94489c64a9af8dcf013
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: eff4c39b0a171df4cb8cdcbe0e81378d
+  - enabled: 0
+    path: Assets/Scenes/Niveles3.unity
+    guid: a0b95308b3ec0804cb19b276a352f45b
+  - enabled: 0
+    path: Assets/Scenes/Niveles2.unity
+    guid: 9c348e82bdbc51e4eb19bd8fc911cf66
+  - enabled: 1
+    path: Assets/Scenes/Nivel2.unity
+    guid: 4d9c2997f0c34c94d9897035bacc5db6
+  - enabled: 1
+    path: Assets/Scenes/CreditosB.unity
+    guid: 30f1469416285984996b86bf645cfc0f
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 3817cfcfbeac108408101fb26c2f0e01, type: 2}
